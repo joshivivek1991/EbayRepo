@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Ebay Test</th></tr>
+<tr><td><a href="#t0">Ebay Test cases</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">164,700</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Ebay Test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Ebay Test cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.ebay.qa.testcases.HelpandContactTest</td><td><a href="#m0">verifysignupacc</a></td><td rowspan="1">1631961836321</td><td rowspan="1">11260</td></tr><tr class="failedodd"><td rowspan="2">com.ebay.qa.testcases.HomePageTest</td><td><a href="#m1">verifyclickonsportstest</a></td><td rowspan="1">1631961762946</td><td rowspan="1">26391</td></tr><tr class="failedodd"><td><a href="#m2">verifyhomepagetitletest</a></td><td rowspan="1">1631961745434</td><td rowspan="1">3411</td></tr><tr><th colspan="4">Ebay Test cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.ebay.qa.testcases.HelpandContactTest</td><td><a href="#m3">verifyclickonHelp</a></td><td rowspan="1">1631961797025</td><td rowspan="1">3762</td></tr><tr class="passedeven"><td><a href="#m4">verifyclickonbuyingtest</a></td><td rowspan="1">1631961808118</td><td rowspan="1">6560</td></tr><tr class="passedeven"><td><a href="#m5">verifyverifycustomertexttest</a></td><td rowspan="1">1631961821947</td><td rowspan="1">7024</td></tr><tr class="passedodd"><td rowspan="3">com.ebay.qa.testcases.LoginPageTest</td><td><a href="#m6">loginpageTest</a></td><td rowspan="1">1631961711723</td><td rowspan="1">7248</td></tr><tr class="passedodd"><td><a href="#m7">logoTest</a></td><td rowspan="1">1631961701337</td><td rowspan="1">361</td></tr><tr class="passedodd"><td><a href="#m8">titleTest</a></td><td rowspan="1">1631961693991</td><td rowspan="1">94</td></tr></tbody>
+</table>
+<h2>Ebay Test cases</h2><h3 id="m0">com.ebay.qa.testcases.HelpandContactTest#verifysignupacc</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0CMBQJ6&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 76eb7a0bbbc21ac1f05125f3a31fb744
+*** Element info: {Using=name, value=//input[@name=&apos;firstname&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at com.ebay.qa.pages.HelpAndContactPage.clickonsignupaccount(HelpAndContactPage.java:77)
+	at com.ebay.qa.testcases.HelpandContactTest.verifysignupacc(HelpandContactTest.java:58)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.ebay.qa.testcases.HomePageTest#verifyclickonsportstest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.ebay.qa.pages.SportsPage.verifysportlabel(SportsPage.java:13)
+	at com.ebay.qa.testcases.HomePageTest.verifyclickonsportstest(HomePageTest.java:44)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.ebay.qa.testcases.HomePageTest#verifyhomepagetitletest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Security Measure] but found [Electronics, Cars, Fashion, Collectibles &amp; More | eBay]
+	at com.ebay.qa.testcases.HomePageTest.verifyhomepagetitletest(HomePageTest.java:38)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.ebay.qa.testcases.HelpandContactTest#verifyclickonHelp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.ebay.qa.testcases.HelpandContactTest#verifyclickonbuyingtest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.ebay.qa.testcases.HelpandContactTest#verifyverifycustomertexttest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.ebay.qa.testcases.LoginPageTest#loginpageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.ebay.qa.testcases.LoginPageTest#logoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.ebay.qa.testcases.LoginPageTest#titleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Ebay Test]">
+  <test thread-count="5" name="Ebay Test cases(failed)">
+    <classes>
+      <class name="com.ebay.qa.testcases.HomePageTest">
+        <methods>
+          <include name="verifyclickonsportstest"/>
+          <include name="verifyhomepagetitletest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ebay.qa.testcases.HomePageTest -->
+      <class name="com.ebay.qa.testcases.HelpandContactTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="verifysignupacc"/>
+        </methods>
+      </class> <!-- com.ebay.qa.testcases.HelpandContactTest -->
+    </classes>
+  </test> <!-- Ebay Test cases(failed) -->
+</suite> <!-- Failed suite [Ebay Test] -->
